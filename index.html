@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALVE CRAZY DOC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Login -->
+        <div id="loginScreen" class="screen active">
+            <div class="banner">
+                <img src="https://scontent.fnvt4-1.fna.fbcdn.net/v/t39.30808-6/369460596_621392309983408_7268693852719111359_n.png?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=XRt-petMoHkQ7kNvwG5ZT_F&_nc_oc=AdkiZy0-NeDLe935x3lI4JN40t7Haoc1fUv5Up7qu6L1s63OyTe7WTxwAfpB20fr0pE&_nc_zt=23&_nc_ht=scontent.fnvt4-1.fna&_nc_gid=ympnCFx-H-UDXzaS49YF9Q&oh=00_Aff2oakGOXqjNB_IreplRSJY6p1_w0tPiuXKHDOxuLKMMg&oe=68FC5C9F" alt="Banner" class="banner-image">
+            </div>
+            <div class="login-content">
+                <h1 class="title">SALVE CRAZY DOC</h1>
+                <h2 class="subtitle">(SAVE THE DATE)</h2>
+                <div class="password-container">
+                    <input type="password" id="passwordInput" placeholder="Digite a senha..." class="password-input">
+                    <button id="loginBtn" class="login-btn">ENTRAR</button>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+            </div>
+        </div>
+
+        <!-- Tela de Áudios -->
+        <div id="audioScreen" class="screen">
+            <div class="audio-container">
+                <h2 class="audio-title">ÁUDIOS EXCLUSIVOS</h2>
+                
+                <!-- Áudio 1 -->
+                <div class="audio-player">
+                    <audio id="audio1" preload="auto">
+                        <source src="WhatsApp Ptt 2025-07-16 at 16.03.39.ogg" type="audio/ogg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="audio-info">
+                        <div class="audio-label">Áudio 1</div>
+                        <div class="audio-status" id="status1">Aguardando...</div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress1"></div>
+                        </div>
+                        <div class="time-display" id="time1">0:00 / 0:00</div>
+                    </div>
+                    <div class="play-indicator" id="indicator1">
+                        <div class="sound-waves">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Áudio 2 -->
+                <div class="audio-player">
+                    <audio id="audio2" preload="auto">
+                        <source src="WhatsApp Ptt 2025-07-16 at 16.06.56.ogg" type="audio/ogg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="audio-info">
+                        <div class="audio-label">Áudio 2</div>
+                        <div class="audio-status" id="status2">Aguardando...</div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress2"></div>
+                        </div>
+                        <div class="time-display" id="time2">0:00 / 0:00</div>
+                    </div>
+                    <div class="play-indicator" id="indicator2">
+                        <div class="sound-waves">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tela de Finalização -->
+        <div id="finalScreen" class="screen">
+            <div class="final-content">
+                <h1 class="final-title" id="finalTitle">20.11/2025</h1>
+                <h2 class="save-date" id="saveDate" style="display: none;">SAVE THE DATE</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Dica -->
+    <div id="hintModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">DICA</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="hint-text">
+                    A senha é o bordão final do vídeo do último visualizer apresentando a coleção de roupas novas, 
+                    postado pela salvecrazy marca (@salvecrazy). A senha é sem acento, sem espaço e tudo junto.
+                </p>
+                <p class="hint-example">
+                    Exemplo: <span class="example-text">melhorqueasalvemefalaquem</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
